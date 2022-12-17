@@ -1,0 +1,183 @@
+
+html, body {
+	background-color: #00C0F0;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    background-image: url("assets/BG.png");
+    cursor: none;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	background-color: white;
+	border-radius: 15px;
+	width: 200px;
+	height: 300px;
+}
+
+.centered h1 {
+	color: #00C0F0;
+}
+
+.centered p {
+	color: #00C0F0;
+}
+
+a {
+    color: blue;
+    transition: all 0.3s ease;
+    cursor: none;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: cornflowerblue;
+}
+
+/* TRAIL EFFECT */
+
+#planeTrailer {
+    transition: 300ms ease all;
+}
+
+#trailer {
+	height: 20px;
+	width: 20px;
+/*	background-color: white;*/
+	border-radius: 20px;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 10000;
+	pointer-events: none;
+	transition: opacity 500ms ease;
+}
+
+body:hover > #trailer {
+	opacity: 1;
+}
+
+/* Clouds */
+#cloud1 {
+    top: 15%;
+	transform: translateX(800px);
+    position: absolute;
+    -webkit-animation: linear infinite alternate;
+    -webkit-animation-name: moveLeft;
+    -webkit-animation-duration: 100s;
+}
+
+#cloud2 {
+    top: 25%;
+    position: absolute;
+    -webkit-animation: linear infinite alternate;
+    -webkit-animation-name: moveRight;
+    -webkit-animation-duration: 150s;
+}
+
+#cloud3 {
+    top: 5%;
+    position: absolute;
+    -webkit-animation: linear infinite alternate;
+    -webkit-animation-name: moveRight;
+    -webkit-animation-duration: 120s;
+}
+
+#cloud4 {
+    top: 30%;
+    position: absolute;
+    transform: translateX(100px);
+    -webkit-animation: linear infinite alternate;
+    -webkit-animation-name: moveRightHalfWay;
+    -webkit-animation-duration: 115s;
+}
+
+#cloud5 {
+    top: 0%;
+    transform: translateX(390px);
+    position: absolute;
+    -webkit-animation: linear infinite alternate;
+    -webkit-animation-name: moveLeft;
+    -webkit-animation-duration: 65s;
+}
+
+#cloud6 {
+    top: 45%;
+    transform: translateX(750px);
+    position: absolute;
+    -webkit-animation: linear infinite alternate;
+    -webkit-animation-name: moveLeft;
+    -webkit-animation-duration: 80s;
+}
+
+#cloud7 {
+    top: 40%;
+    transform: translateX(1000px);
+    position: absolute;
+    -webkit-animation: linear infinite alternate;
+    -webkit-animation-name: moveLeft;
+    -webkit-animation-duration: 70s;
+}
+
+#cloud8 {
+    top: 20%;
+    transform: translateX(0px);
+    position: absolute;
+    -webkit-animation: linear infinite alternate;
+    -webkit-animation-name: moveRight;
+    -webkit-animation-duration: 55s;
+}
+
+@-webkit-keyframes moveRight {
+    0% { left: 0%;}
+	50% { left : 93%;}
+	100% { left: 0%;}
+}
+
+@-webkit-keyframes moveRightHalfWay {
+    0% { left: 0%;}
+	50% { left : 85%;}
+	100% { left: 0%;}
+}
+
+@-webkit-keyframes moveLeft {
+    0% { left: -0;}
+	50% { left : -93%;}
+	100% { left: -0;}
+}
+
+/* Credits CSS */
+.credits {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    text-align: center;
+    border-radius: 15px;
+    width: 200px;
+    height: 300px;
+}
+
+/*.credits a {
+    color: blue;
+    transition: all 0.3s ease;
+}
+
+.credits a:visited {
+    color: blue;
+}
+
+.credits a:hover {
+    color: cornflowerblue;
+}*/
